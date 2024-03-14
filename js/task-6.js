@@ -18,6 +18,7 @@ function getRandomHexColor() {
         alert('Please enter a number between 1 and 100');
         return;
       }
+      destroyBoxes();
       const boxes = Array.from({ length: amount }, (_, index) => {
         const box = document.createElement('div');
         const size = 30 + index * 10;
